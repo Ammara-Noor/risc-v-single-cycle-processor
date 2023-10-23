@@ -156,7 +156,7 @@ module processor
     mux_4x1 sel_wb_mux
     (
         .sel(sel_wb),
-        .input_a(alu_out),
+        .input_a(alu_out),  
         .input_b(data_mem_out),
         .input_c(pc_out+4),
         .input_d(32'b0),

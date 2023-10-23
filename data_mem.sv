@@ -29,7 +29,7 @@ module data_mem (
             UBYTE:
                 out_data = {24'b0,{data_mem[addr]}};
             UHALFWORD:
-                out_data = {16'b0,{data_mem[addr]}};
+                out_data = {16'b0,data_mem[addr], data_mem[addr+1]};
 	    endcase
         end
     end
