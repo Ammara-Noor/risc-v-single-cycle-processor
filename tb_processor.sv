@@ -44,6 +44,8 @@ module tb_processor();
         $display("JAL return address x5: %b", dut.reg_file_i.reg_mem[5]);
         $display("loaded UI in x6: %b", dut.reg_file_i.reg_mem[6]);
         $display("loaded UI+PC in x7: %b", dut.reg_file_i.reg_mem[7]);
+        
+        
         $finish;
     end
 

@@ -37,7 +37,7 @@ module alu
             SRL:
                 opr_res = opr_a >> opr_b; //Shift Right Logical
             SRA:
-                opr_res = opr_a >>> opr_b; //Shift Right Arithmetic
+                opr_res = opr_a >>> opr_b; //Shift Right Arithmetic ($ to tell signed)
             SLT:
                 opr_res = ($signed(opr_a) < $signed(opr_b)) ? 1 : 0; //Set Less Than
             SLTU:
